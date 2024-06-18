@@ -14,7 +14,7 @@ def run(playwright: Playwright,shirota,dolgota):
     restNames = []
     menus=[]
     result = {}
-    maxRests = 3
+    maxRests = 6
     if len(texts)<maxRests:
         maxRests=len(texts)
     for y in range(0,maxRests):

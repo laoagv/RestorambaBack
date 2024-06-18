@@ -40,7 +40,7 @@ class RestaurentParseAPIView(APIView):
                 newPicture = ""
                 for param in dish:
                     try:
-                        newPrice = int(param)
+                        newPrice = int(param.replace("\u2009 ₽", ""))
                         break
                     except:
                         continue
